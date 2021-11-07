@@ -16,11 +16,11 @@ div{
     color: white;
     text-decoration: none;
     padding: 50px;
-    
+
 }
 .unactive{
-    color:#727272; 
-    text-decoration: none; 
+    color:#727272;
+    text-decoration: none;
     padding: 50px;
 }
 
@@ -40,7 +40,7 @@ img{
 .textal{
     position:relative;
     text-align:center;
-    font-size:80px;
+    font-size: 500%
 }
 
 .text1{
@@ -50,5 +50,4 @@ img{
     transform:translate(-50%, -50%);
     background-color: transparent;
     color:white;
-    
 }

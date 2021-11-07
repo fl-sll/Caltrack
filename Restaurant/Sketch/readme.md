@@ -1,1 +1,1 @@
-This is the sketch
+This is the sketch for our restaurant website

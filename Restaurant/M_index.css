@@ -1,0 +1,47 @@
+body{
+    background-color: white;
+    font-family: Verdana;
+}
+
+.topnav {
+    background-color: #222222;
+    height: 25px;
+    width: 98.5%;
+    padding: 20px 10px;
+}
+
+.active{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+
+.unactive{
+    color:#727272;
+    text-decoration: none;
+    padding: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+}
+
+.grid-child{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.grid-child:hover{
+    box-shadow: 5px 5px 5px gray;
+}

@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    font-family: Verdana;
+}
+div{
+    background-color: white;
+}
+.topnav {
+    background-color: #222222;
+    height: 25px;
+    width: 98.5%;
+    padding: 20px 10px;
+}
+.active{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    
+}
+.unactive{
+    color:#727272; 
+    text-decoration: none; 
+    padding: 50px;
+}
+
+img{
+    width: 100%;
+    filter:brightness(50%)
+}
+
+.abt{
+    background-color: #FFCC4A;
+    color: black;
+    text-align: center;
+    padding:50px;
+
+}
+
+.textal{
+    position:relative;
+    text-align:center;
+    font-size:80px;
+}
+
+.text1{
+    position:absolute;
+    top:50%;
+    left:25%;
+    transform:translate(-50%, -50%);
+    background-color: transparent;
+    color:white;
+    
+}

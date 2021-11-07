@@ -1,0 +1,45 @@
+body{
+    background-color: white;
+    font-family: Verdana;
+}
+.topnav {
+    background-color: #222222;
+    height: 25px;
+    width: 98.5%;
+    padding: 20px 10px;
+}
+.active{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+.unactive{
+    color:#727272;
+    text-decoration: none;
+    padding: 50px;
+}
+
+.form input, textarea{
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border:1px solid #727272;
+
+  }
+
+.submit{
+    background-color:#353535;
+    color:#ffffff;
+    padding: 25px;
+    text-align:center;
+  }
+
+.submit:hover{
+    cursor: pointer;
+}
+.da:hover{
+    cursor: pointer;
+}

@@ -8,6 +8,11 @@ body{
     width: 98.5%;
     padding: 20px 10px;
 }
+
+.logo{
+    cursor:pointer;
+}
+
 .active{
     font-weight: bold;
     color: white;

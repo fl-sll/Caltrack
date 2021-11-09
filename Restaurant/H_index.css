@@ -5,6 +5,11 @@ body{
 div{
     background-color: white;
 }
+
+.logo{
+    cursor:pointer;
+}
+
 .topnav {
     background-color: #222222;
     height: 25px;

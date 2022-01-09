@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Diet </title>
+        <link rel="stylesheet" href="MyDiet.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <a href="Diets.html"> Diets </a>
+            <a href="profile.html"> Profile </a>
+            <a class="active" href="MyDiet.html"> My Diet </a>
+            <a href="index.html"> Home </a>
+            <img src="logo.jpg" align="left" style="width:50px; height:50px;margin-left:6px; transform:scaleX(1);">
+        </div>
+        <div class="textal">
+            <img src="https://media.istockphoto.com/photos/frame-of-fresh-vegetables-on-wooden-background-with-copy-space-picture-id612011684?k=20&m=612011684&s=170667a&w=0&h=Le49Lxt1727ZMe1BXWOX-diGWFER-cIRfZtgPo1LD_Y=">
+            <div class="text1"> CalTrack </div>
+        </div>
+        <div class="sep">
+            <div class="sepin"> Diets </div>
+        </div>
+        <div class="bot">
+            <a class="box" href="Diets.html">
+                Diet for Today: <br>
+                High Fibers <br>
+            </a>
+            <div class="box">
+                Today's Exercise Plan: <br>
+                2 x 60 Seconds Plank <br>
+                2 x 15 Crunches <br>
+                2 x 25 Sit-ups <br>
+                3 Mile Walk <br>
+            </div>
+        </div>
+        <div class="bot" id="calc-outer-wrap">
+        <div id="form-error" style="display:none;"></div>
+            <div class="box">
+                Today's Intakes: <br>
+                    <form class = "calc-form" id = "calc-form">
+                        <div id="FormItems">
+                            <select name="Food">
+                                <option value="Rice">Rice</option>
+                                <option value="Potato">Potato</option>
+                                <option value="Vegetables">Vegetables</option>
+                                <option value="Beef">Beef</option>
+                                <option value="Chicken">Chicken</option>
+                                <option value="Pork">Pork</option>
+                                <option value="Eggs">Eggs</option>
+                                <option value="Oats">Oats</option>
+                                <option value="Coke">Coke</option>
+                                <option value="Sprite">Sprite</option>
+                            </select>
+                            <input name="Amount" id="Amount" type="number" placeholder="Amount (in gr)" min="1">
+                      </div><br>
+                      <input type="button" value="Add More" class="Addmore">
+                      <div class="btn-wrap field-outer">
+                        <button class="form-submit" onclick="calc()">Calculate</button>
+                      </div>
+                    </form>
+            </div>
+            <div id="results" style="display:none;"></div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            $(".Addmore").click(function(e) {
+                e.preventDefault();
+                $("#FormItems").append('<hr width="300px">');
+                $("#FormItems").append('<select name="Food & Drink"> <option value="Rice">Rice</option> <option value="Potato">Potato</option> <option value="Vegetables">Vegetables</option> <option value="Beef">Beef</option> <option value="Chicken">Chicken</option> <option value="Pork">Pork</option> <option value="Eggs">Eggs</option> <option value="Oats">Oats</option> <option value="Coke">Coke</option> <option value="Sprite">Sprite</option> </select>');
+                $("#FormItems").append('<input name="Amount" type="number" placeholder="Amount (in gr)" min="1">');
+            });
+
+            function calc(){
+                const form = document.getElementById("calc-form")
+                const results = document.getElementById("results")
+                const errors = document.getElementById("form-error")
+
+                function showResults(calories) {
+                    results.innerHTML = `<p>Your intakes today: <strong>${(calories).toFixed(2)} </strong> calories.</p>`;
+                    results.style.display = ''
+                }
+                function errorMessage(msg) {
+                    errors.innerHTML = msg;
+                    errors.style.display = '';
+                    return false;
+                }
+                function submitHandler(e) {
+                    e.preventDefault();
+                    let Amount = parseFloat(form.Amount.value)
+                    if(isNaN(Amount) || Amount < 0) {
+                        return errorMessage('Please enter a valid amount');
+                    }
+
+                    let calories = 0;
+
+                    if(form.Food.value == "Rice") {
+                        calories = Amount * 1.3
+                    }
+                    else if(form.Food.value == "Potato") {
+                        calories = Amount * 0.77
+                    }
+                    else if(form.Food.value == "Vegetables"){
+                        calories = Amount * 0.65
+                    }
+                    else if(form.Food.value == "Beef"){
+                        calories = Amount * 2.5
+                    }
+                    else if(form.Food.value == "Chicken"){
+                        calories = Amount * 2.39
+                    }
+                    else if(form.Food.value == "Pork"){
+                        calories = Amount * 2.42
+                    }
+                    else if(form.Food.value == "Eggs"){
+                        calories = Amount * 1.55
+                    }
+                    else if(form.Food.value == "Oats"){
+                        calories = Amount * 3.89
+                    }
+                    else if(form.Food.value == "Coke"){
+                        calories = Amount * 0.4
+                    }
+                    else if(form.Food.value == "Sprite"){
+                        calories = Amount * 0.39
+                    }
+                    showResults(calories)
+                }
+                form.addEventListener('submit', submitHandler);
+                results.addEventListener('click', resetForm, true);
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CalTrack </title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <a href="Diets.html"> Diets </a>
+            <a href="profile.html"> Profile </a>
+            <a href="MyDiet.html"> My Diet </a>
+            <a class="active" href="index.html"> Home </a>
+            <img src="logo.jpg" align="left" style="width:50px; height:50px;margin-left:6px; transform:scaleX(1);">
+        </div>
+        <div class="textal">
+            <img src="https://sehatqcontent.s3.amazonaws.com/content/article/Main/6534-20200408-Olahraga-Gym-untuk-Pemula-FA-MY_RU%201.jpg">
+            <div class="text1"> CalTrack </div>
+        </div>
+        <div class="abt">
+            <h1> About Us </h1>
+            <p> This is CalTrack </p>
+            <p> Our Goal is to make people live a healthier lifestyle </p>
+        </div>
+        <div class="rec">
+            <h1> Recommendations </h1>
+            <div class="buttons">
+                <a class="button" href="Diets.html"> Clean Eating </a>
+                <a class="button" href="Diets.html"> Low Carbs </a>
+                <a class="button" href="Diets.html"> High Fibers </a>
+                <a class="button" href="Diets.html"> Gluten Free </a>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
+</html>

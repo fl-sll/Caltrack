@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> Clean Eating Diet </title>
+        <link rel="stylesheet" href="Diets.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <a class="active" href="Diets.html"> Diets </a>
+            <a href="profile.html"> Profile </a>
+            <a href="MyDiet.html"> My Diet </a>
+            <a href="index.html"> Home </a>
+            <img src="logo.jpg" align="left" style="width:50px; height:50px;margin-left:6px;">
+        </div>
+        <div class="type" id="CE">
+            <div class="head"> Clean Eating </div>
+            <div class="content"> <p>Clean eating is traditionally defined as eating simple, whole foods without any artificial ingredients. This typically involves the elimination of most processed foods, trans fats, heavy saturated fats, added sugar and refined grains. And some choose to take clean eating a notch further by also eliminating gluten, dairy, and soy as well. </p> </div>
+        </div>
+        <div class="type" id="LC">
+            <div class="head"> Low Carbs  </div>
+            <div class="content">
+                <p> A low-carb diet limits carbohydrates such as those found in grains, starchy vegetables and fruit and emphasizes foods high in protein and fat. Many types of low-carb diets exist. Each diet has varying restrictions on the types and amounts of carbohydrates you can eat.</p>
+                <p> A low-carb diet is generally used for weight loss. Some low-carb diets may have health benefits beyond weight loss, such as reducing your risk of type 2 diabetes and metabolic syndrome. </p>
+            </div>
+        </div>
+        <div class="type" id="HF">
+            <div class="head"> High Fibers </div>
+            <div class="content"> <p> A high-fiber diet is a diet in which the individual consumes foods that meet or exceed the dietary reference intake (DRI) for dietary fiber </p> </div>
+        </div>
+        <div class="type" id="GF">
+            <div class="head"> Gluten Free </div>
+            <div class="content"> <p>To follow a gluten-free diet, you must avoid wheat and some other grains while choosing substitutes that provide nutrients for a healthy diet. </p></div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
+</html>

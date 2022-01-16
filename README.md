@@ -4,7 +4,7 @@
 
 <h2>Course : Human Computer Interaction (COMP6800001) - Final Project</h2>
 
-<p> Live Link for the website : https://fl-sll.github.io/Caltrack/ </p>
+<p> Live Link for the website : https://fl-sll.github.io/Caltrack_Caltrack/ </p>
 
 <h2> Team : CalTrack</h2>
 

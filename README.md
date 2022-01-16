@@ -19,7 +19,7 @@
 
 <h2> Description </h2>
 
-<p>Our Website is aimed to help people live a healthier lifestyle. </p>
+<p>Our Website is aimed to help people live a healthier lifestyle. <br> CalTrack is a calorie "tracking" service that helps you calculate your minimum daily calorie necessity to keep your body functioning properly and it also helps you understand various diets and it also has a calorie calculator for you to use. </p>
 
 <h2> Problem Statement </h2>
 

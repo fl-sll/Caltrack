@@ -17,11 +17,11 @@
 <li> Bryan Angelo - 2502005345 </li>
 </ul>
 
-<h2 align="center"> Description </h2>
+<h2> Description </h2>
 
 <p>Our Website is aimed to help people live a healthier lifestyle. </p>
 
-<h2 align="center"> Problem Statement </h2>
+<h2> Problem Statement </h2>
 
 <p> Nowadays, People are getting more and more sedentary. Everything can be ordered online now so people tend to do nothing other than sit all day. Our website is aimed to help people exercise by giving daily exercise plans and help them to eat better by giving daily meal plans. These plans are to help them get on track to lead a better lifestyle. </p>
 

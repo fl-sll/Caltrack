@@ -1,12 +1,14 @@
-<h1 align="center">Caltrack</h1>
+<h1 align="center">CalTrack</h1>
 
 <h2> Class Name : L1AC </h2>
 
 <h2>Course : Human Computer Interaction (COMP6800001) - Final Project</h2>
 
+<p> Live Link for the website : https://fl-sll.github.io/Caltrack/ </p>
+
 <h2> Team : CalTrack</h2>
 
-Members :
+<h2> Members : </h2>
 <ul>
 <li> Edward Alvin Koesmanto - 2501963141</li>
 
@@ -14,14 +16,25 @@ Members :
 
 <li> Bryan Angelo - 2502005345 </li>
 </ul>
-Contribution :
-<ul>
-<li>Edward Alvin Koesmanto - Made the Home Page, Profile Page, Problem Statement, Video Documentary, Test Case, Activity Diagram, Use Case Diagram and User Persona</li>
 
-<li>Wilbert Wirawan Ichwan - Made the My Diets and Diets Page, Use Case Diagram, Use Case Scenario, Problem Statement, Video Documentary, Test case, Story Boarding</li>
+<h2 align="center"> Description </h2>
+
+<p>Our Website is aimed to help people live a healthier lifestyle. </p>
+
+<h2 align="center"> Problem Statement </h2>
+
+<p> Nowadays, People are getting more and more sedentary. Everything can be ordered online now so people tend to do nothing other than sit all day. Our website is aimed to help people exercise by giving daily exercise plans and help them to eat better by giving daily meal plans. These plans are to help them get on track to lead a better lifestyle. </p>
+
+<h2> Contribution : </h2>
+
+<p>For more detailed explanation of the contribution, go to the Logs.pdf in the docs folder</p>
+
+<ul>
+<li>Edward Alvin Koesmanto - Made the Home Page, Profile Page, Problem Statement, Video Documentary, Test Case, Activity Diagram, Use Case Diagram and User Persona, Contact Us Page </li>
+
+<li>Wilbert Wirawan Ichwan - Made the My Diets and Diets Page, Use Case Diagram, Use Case Scenario, Problem Statement, Video Documentary, Story Boarding, Contact Us Page</li>
 
 <li>Bryan Angelo - Made the logo and gave out a few ideas, Video Documentary</li>
 </ul>
 
 
-<p> Link for the website : https://fl-sll.github.io/Caltrack/ </p>

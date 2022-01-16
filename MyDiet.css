@@ -1,12 +1,15 @@
+/* Made by Wilbert Wirawan Ichwan (2501963186) */
 body{
     margin: 0;
     background-color:rgb(252, 249, 249);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header {
     overflow: hidden;
     background-color: #333;
     z-index: 2;
+    border-bottom: 2px solid #333;
 }
 
 .header a {
@@ -26,6 +29,10 @@ body{
 .header a.active{
     background-color:orange;
     color:black;
+}
+
+.header a.active:hover{
+    background-color:rgb(255, 187, 0);
 }
 
 .textal{
@@ -94,6 +101,7 @@ img{
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
+    background-color:#ddd;
 }
 
 .form-submit {
@@ -114,7 +122,51 @@ img{
       box-shadow: none;
 }
 
-.Addmore {
+.footer{
+    background-color:#222;
+    color: white;
+    padding: 40px;
+    height: 90px;
+}
+
+.footertitle{
+    float:left;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.footer-elements {
+    text-decoration: none;
+    float: right;
+    color: white;
+}
+.footersfooter {
+    font-size:  12px;
+}
+.footer-elements a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.footer-elements li{
+    padding-bottom:10px
+}
+.footersfooter {
+    font-size:  12px;
+}
+#rs{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: black;
+}
+.resultsf{
+    margin-top:150px;
+    margin-bottom:100px;
+}
+/* .Addmore {
     background : #333;
     border: 0;
     color: white;
@@ -126,4 +178,4 @@ img{
 .Addmore:hover{
     box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.3);
     outline: 0;
-}
+} */

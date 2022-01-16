@@ -1,3 +1,5 @@
+<!-- Made by Wilbert Wirawan Ichwan (2501963186) -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,9 +7,13 @@
         <link rel="stylesheet" href="MyDiet.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header" id="myHeader">
+            <a href="Contact.html"> Contact Us </a> 
             <a href="Diets.html"> Diets </a>
             <a href="profile.html"> Profile </a>
             <a class="active" href="MyDiet.html"> My Diet </a>
@@ -37,7 +43,7 @@
         <div class="bot" id="calc-outer-wrap">
         <div id="form-error" style="display:none;"></div>
             <div class="box">
-                Today's Intakes: <br>
+                Calorie Calculator: <br>
                     <form class = "calc-form" id = "calc-form">
                         <div id="FormItems">
                             <select name="Food">
@@ -54,7 +60,7 @@
                             </select>
                             <input name="Amount" id="Amount" type="number" placeholder="Amount (in gr)" min="1">
                       </div><br>
-                      <input type="button" value="Add More" class="Addmore">
+                      <!-- <input type="button" value="Add More" class="Addmore"> -->
                       <div class="btn-wrap field-outer">
                         <button class="form-submit" onclick="calc()">Calculate</button>
                       </div>
@@ -62,6 +68,20 @@
             </div>
             <div id="results" style="display:none;"></div>
         </div>
+        <div class="footer">
+            <div class="footertitle">
+                CalTrack
+                <div class="footersfooter">
+                    <br><br>© Copyright CalTrack 2021 - 2022
+                </div>
+            </div>
+            <div class="footer-elements">
+                <ul type="none">
+                    <li><a href="Diets.html"> <u>Diets</u> </a></li>
+                    <li><a href="profile.html"> <u>Profile</u> </a></li>
+                    <li><a href="Contact.html"> <u>Contact Us</u> </a></li>
+                </ul>
+            </div>
         <script>
             window.onscroll = function() {myFunction()};
 
@@ -75,12 +95,12 @@
                 header.classList.remove("sticky");
               }
             }
-            $(".Addmore").click(function(e) {
-                e.preventDefault();
-                $("#FormItems").append('<hr width="300px">');
-                $("#FormItems").append('<select name="Food & Drink"> <option value="Rice">Rice</option> <option value="Potato">Potato</option> <option value="Vegetables">Vegetables</option> <option value="Beef">Beef</option> <option value="Chicken">Chicken</option> <option value="Pork">Pork</option> <option value="Eggs">Eggs</option> <option value="Oats">Oats</option> <option value="Coke">Coke</option> <option value="Sprite">Sprite</option> </select>');
-                $("#FormItems").append('<input name="Amount" type="number" placeholder="Amount (in gr)" min="1">');
-            });
+            // $(".Addmore").click(function(e) {
+            //     e.preventDefault();
+            //     $("#FormItems").append('<hr width="300px">');
+            //     $("#FormItems").append('<select name="Food & Drink"> <option value="Rice">Rice</option> <option value="Potato">Potato</option> <option value="Vegetables">Vegetables</option> <option value="Beef">Beef</option> <option value="Chicken">Chicken</option> <option value="Pork">Pork</option> <option value="Eggs">Eggs</option> <option value="Oats">Oats</option> <option value="Coke">Coke</option> <option value="Sprite">Sprite</option> </select>');
+            //     $("#FormItems").append('<input name="Amount" type="number" placeholder="Amount (in gr)" min="1">');
+            // });
 
             function calc(){
                 const form = document.getElementById("calc-form")
@@ -88,14 +108,26 @@
                 const errors = document.getElementById("form-error")
 
                 function showResults(calories) {
-                    results.innerHTML = `<p>Your intakes today: <strong>${(calories).toFixed(2)} </strong> calories.</p>`;
+                    results.innerHTML = `<p class="resultsf">Calories: <strong>${(calories).toFixed(2)} </strong> calories.</p> <a href="#" id="rs">revise</a>`;
                     results.style.display = ''
+                }
+                function resetForm(e) {
+                if(e.target.id = 'rs') {
+                    e.preventDefault();
+                    results.style.display = 'none';
+                    form.style.display = '';
+                    form.reset()
+                }
                 }
                 function errorMessage(msg) {
                     errors.innerHTML = msg;
+                    setTimeout(function(){
+                    $(errors).remove();
+                    }, 2000);
                     errors.style.display = '';
                     return false;
                 }
+
                 function submitHandler(e) {
                     e.preventDefault();
                     let Amount = parseFloat(form.Amount.value)

@@ -1,0 +1,80 @@
+<!-- Made By Edward Alvin Koesmanto (2501963141) and Wilbert Wirawan Ichwan (2501963186)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CalTrack Contact us </title>
+        <link rel="stylesheet" href="Contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <a href="Contact.html" class="active"> Contact Us</a>
+            <a href="Diets.html"> Diets </a>
+            <a href="profile.html"> Profile </a>
+            <a href="MyDiet.html"> My Diet </a>
+            <a href="index.html"> Home </a>
+            <img src="logo.jpg" align="left" style="margin-left:6px; width: 50px; height:50px">
+        </div>
+        <div class="container">
+          <h1>Connect with us</h1>
+          <p>Please contact us if you have any problems using our web services<br> We would love to hear your feedback</p>
+          <div class="contact-box">
+            <div class="contact-left">
+              <h2>Contact Us</h2>
+              Name:<span>*</span>
+              <br><input type="text" placeholder="John Doe">
+              <br><br>Email:<span>*</span>
+              <br><input type="email" placeholder="JohnDoe@gmail.com">
+              <br><br>Phone Number:<span>*</span>
+              <br><input type="text" mode="numeric" pattern="[0-9]*" placeholder="0812354335">
+              <br><br>Subject:<span>*</span>
+              <br><input type="text" placeholder="Subject">
+              <br><br>Message:<span>*</span>
+              <br><textarea placeholder="State your message"></textarea>
+              <br><br>
+              <input type="submit" value="Submit your ticket">
+            </div>
+            <div class="contact-right">
+              <h2> Reach Us </h2>
+              <br><br><br><p> <b>Phone Number:</b><br> (+62) 823142312 </p>
+              <p> <b>Email:</b> <br>CalTrack@gmail.com </p>
+              <p> <b>Address:</b> <br>ThisIsARealStreet St., West Jakarta<br> Indonesia</p>
+              <br><br><br><br><a href="#"><img src="https://cdn.pixabay.com/photo/2021/02/08/15/44/social-media-5995266_1280.png"></a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="footer">
+          <div class="footertitle">
+              CalTrack
+              <div class="footersfooter">
+                <br><br>© Copyright CalTrack 2021 - 2022
+            </div>
+          </div>
+          <div class="footer-elements">
+              <ul type="none">
+                <li><a href="Diets.html"> <u>Diets</u> </a></li>
+                <li><a href="profile.html"> <u>Profile</u> </a></li>
+                <li><a href="Contact.html"> <u>Contact Us</u> </a></li>
+              </ul>
+          </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
+</html>

@@ -1,11 +1,13 @@
+/* Made by Wilbert Wirawan Ichwan (2501963186) */
 body{
     margin: 0;
-
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header {
     overflow: hidden;
     background-color: #333;
+    border-bottom: 2px solid #333;
 }
 
 .header a {
@@ -27,6 +29,10 @@ body{
     color:black;
 }
 
+.header a.active:hover{
+    background-color:rgb(255, 187, 0);
+}
+
 .sticky{
     position: fixed;
     top: 0;
@@ -37,16 +43,63 @@ body{
 .type{
     border: 2px solid black;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     margin: 25px;
     border-radius: 10px;
+    background: linear-gradient(#ddd 0% 60%, orange 61% 100%)
 }
 
 .head{
     font-weight: bold;
     font-size: 35px;
+    padding-bottom:20px;
 }
 
 .content{
+    text-align:center;
     font-size: 20px;
+    padding-left:300px;
+    padding-right: 300px;
+    background-color: orange;
+}
+
+.type img{
+    width: 700px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+
+.footer{
+    background-color:#222;
+    color: white;
+    padding: 40px;
+    height: 90px;
+}
+
+.footertitle{
+    float:left;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.footer-elements {
+    text-decoration: none;
+    float: right;
+    color: white;
+}
+
+.footer-elements a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.footer-elements li{
+    padding-bottom:10px
+}
+
+.footersfooter {
+    font-size:  12px;
 }

@@ -1,11 +1,14 @@
+/* Made By Edward Alvin Koesmanto (2501963141) */
 body{
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header {
     overflow: hidden;
     background-color: #333;
-    z-index:2
+    z-index:2;
+    border-bottom: 2px solid #333;
 }
 
 .header a {
@@ -26,6 +29,11 @@ body{
     background-color:orange;
     color:black;
 }
+
+.header a.active:hover{
+    background-color:rgb(255, 187, 0);
+}
+
 .logo{
     float:left;
     width: 30px;
@@ -69,11 +77,53 @@ img{
     background-color: orange;
 }
 
+.abt p{
+    font-size:18px;
+}
+
 .rec{
     text-align: center;
     height: 100%;
     padding: 50px;
     background-color:white;
+    color: black;
+}
+
+.rec p {
+    font-size:16px;
+    margin:0px;
+    padding-bottom:20px;
+}
+
+.feed{
+    background-color: #ddd;
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+    color: black;
+}
+
+.feed p{
+    font-size:16px;
+    margin:0px;
+    padding-bottom:40px;
+}
+
+.feed a{
+    cursor:pointer;
+    height:40px;
+    width: 150px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey;
+    text-decoration: none;
+    color: black;
+    padding-top: 17px;
+}
+
+.feed a:hover{
+    background-color: rgb(255, 187, 0);
     color: black;
 }
 
@@ -99,4 +149,36 @@ img{
 
 .button:active{
     box-shadow: 0 0 0 white;
+}
+
+.footer{
+    background-color:#222;
+    color: white;
+    padding: 40px;
+    height: 90px;
+}
+
+.footertitle{
+    float:left;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.footer-elements {
+    float: right;
+    color: white;
+}
+
+.footer-elements a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.footer-elements li{
+    padding-bottom:10px
+}
+
+.footersfooter {
+    font-size:  12px;
 }

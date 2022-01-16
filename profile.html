@@ -1,82 +1,107 @@
+<!-- Made By: Edward Alvin Koesmanto (2501963141) -->
 <!DOCTYPE html>
 <html>
     <head>
         <title> CalTrack Profile </title>
         <link rel="stylesheet" href="profile.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header" id="myHeader">
+            <a href="Contact.html"> Contact Us </a>
             <a href="Diets.html"> Diets </a>
             <a class="active" href="profile.html"> Profile </a>
             <a href="MyDiet.html"> My Diet </a>
             <a href="index.html"> Home </a>
             <img src="logo.jpg" align="left" style="margin-left:6px; width: 50px; height:50px">
         </div>
-        <!-- <div class="pic">
-            <p><label for="file" style="cursor:pointer;"> Upload Your Image : </label></p>
-            <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
-            <p><img id="output" width="200" /></p>
-            <script type="text/javascript" src="profile.js"></script>
-        </div> -->
         <div class="page">
             <h1 class="head"> Profile </h1>
-            <div class="form">
-                <img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-                <div class="content">
-                <div class="calc-outer-wrap">
-                <div id="form-error" style="display:none;"></div>
-                    <h3> Name: <input type="text"> </h3>
-                <form class="calc-form" id="calc-form">
-                    <div class="form-field">
-                        <div class="field-outer">
-                            <label for="distance" class="top-label"> Age: </label>
-                            <div class="field-items">
-                                <div class="field field-large">
-                                    <input type="text" name="age" inputmode="numeric" pattern="[0-9]*">
-                                </div>
-                                <div class="field field-medium">
-                                    <select name="gender">
-                                        <option valie="Male"> Male </option> 
-                                        <option value="Female"> Female </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field-outer">
-                            <label for="height" class="top-label"> Height: </label>
-                            <div class="field-items">
-                                <div class="field">
-                                    <input type="text" name="height" id="height" inputmode="numeric" pattern="[0-9]*" placeholder="(in cm)">
+            <div class="profilebox">
+
+                <div class="form">
+                    <h2> BMR Calculator </h2>
+                    <div class="content">
+                    <div class="calc-outer-wrap">
+                    <div id="form-error" style="display:none;"></div>
+                    <form class="calc-form" id="calc-form">
+                        <div class="form-field">
+                            <div class="field-outer">
+                                <label for="age" class="top-label"> Age: </label>
+                                <div class="field-items">
+                                    <div class="field field-large">
+                                        <input type="text" name="age" inputmode="numeric" pattern="[0-9]*" placeholder="18">
+                                    </div>
+                                    <div class="field field-medium">
+                                        <select name="gender">
+                                            <option value="Male"> Male </option>
+                                            <option value="Female"> Female </option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="field-outer">
-                            <label for="weight" class="top-label"> Your Weight: </label>
-                            <div class="field-items">
-                                <div class="field field-large">
-                                    <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*" placeholder="(in Kg)">
+                            <div class="field-outer">
+                                <label for="height" class="top-label"> Height: </label>
+                                <div class="field-items">
+                                    <div class="field">
+                                        <input type="text" name="height" id="height" inputmode="numeric" pattern="[0-9]*" placeholder="(in cm)">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="field-outer">
+                                <label for="weight" class="top-label"> Weight: </label>
+                                <div class="field-items">
+                                    <div class="field field-large">
+                                        <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*" placeholder="(in Kg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="btn-wrp field-outer">
+                                <button class="form-submit" onclick="main()"> Calculate </button>
+                            </div>
                         </div>
-                        <br>
-                        <div class="btn-wrp field-outer">
-                            <button class="form-submit" onclick="main()"> Calculate </button>
-                        </div>
+                    </form>
+                    <div id="results" style="display:none;"></div>
                     </div>
-                </form>
-                <div id="results" style="display:none;"></div>
+                    </div>
                 </div>
+                <div class="profileright">
+                    <h2> Personal Information </h2>
+                    <img class="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <br><br><p> <b>Name:</b> <br> Johnbro <a href="#"> edit </a></p>
+                    <p> <b>Phone Number:</b><br> (+62) 82378127631 <a href="#"> edit </a></p>
+                    <p> <b>Email:</b> <br>Johnbro@gmail.com <a href="#"> edit </a></p>
+                    <p> <b>Instagram:</b> <br>@Johnbro.id <a href="#"> edit </a></p>
+                    <p> <b>Country:</b> <br>Indonesia <a href="#"> edit </a></p>
+                    <p> <b>Address:</b> <br>ThisIsTotallyAStreet St., West Jakarta <a href="#"> edit </a></p>
                 </div>
             </div>
         </div>
         <div class="list">
-            <h1> List of Diets you are currently on </h1>
+            <h1> Other Recommendations </h1>
             <div class="diets">
                 <a class="diet" href="Diets.html"> High Fibers </a>
                 <a class="diet" href="Diets.html"> Low Fats </a>
             </div>
         </div>
+        <div class="footer">
+            <div class="footertitle">
+                CalTrack
+                <div class="footersfooter">
+                    <br><br>© Copyright CalTrack 2021 - 2022
+                </div>
+            </div>
+            <div class="footer-elements">
+                <ul type="none">
+                    <li><a href="Diets.html"> <u>Diets</u> </a></li>
+                    <li><a href="profile.html"> <u>Profile</u> </a></li>
+                    <li><a href="Contact.html"> <u>Contact Us</u> </a></li>
+                </ul>
+            </div>
         <script>
             window.onscroll = function() {myFunction()};
 
@@ -102,7 +127,7 @@
                 }
 
                 function showResults(calories) {
-                    results.innerHTML = `<p>Your Basal Metabolic Rate (BMR) is: <strong>${(calories).toFixed(2)} </strong> calories a day.</p><a href="#" id="rs">revise</a>`;
+                    results.innerHTML = `<p class="resultsf">Your Basal Metabolic Rate (BMR) is: <strong>${(calories).toFixed(2)} </strong> calories a day.</p><a href="#" id="rs">reset</a>`;
                     results.style.display = ''
                     form.style.display = 'none'
                     errors.style.display = 'none'
@@ -120,17 +145,17 @@
 
                     // Age
                     let age = parseFloat(form.age.value);
-                    if(isNaN(age) || age < 0) {
+                    if(isNaN(age) || age <= 0) {
                         return errorMessage('Please enter a valid age');
                     }
                     // Height
                     let height = parseFloat(form.height.value);
-                    if(isNaN(height) || age < 0) {
+                    if(isNaN(height) || height <= 0) {
                         return errorMessage('Please enter a valid height');
                     }
                     // Weight
                     let weight = parseFloat(form.weight.value);
-                    if(isNaN(weight) || age < 0) {
+                    if(isNaN(weight) || weight <= 0) {
                         return errorMessage('Please enter a valid weight');
                     }
 
@@ -145,7 +170,6 @@
                 }
                 form.addEventListener('submit', submitHandler);
                 results.addEventListener('click', resetForm, true);
-
             })();
         </script>
     </body>

@@ -27,7 +27,7 @@
 
 <h2> Contribution : </h2>
 
-<p>For more detailed explanation of the contribution, go to the Logs.pdf in the docs folder</p>
+<p>For more detailed explanation of the contribution, go to the "Human Computer Interaction Final Project Contribution Logs - CalTrack.pdf" in the docs folder</p>
 
 <ul>
 <li>Edward Alvin Koesmanto - Made the Home Page, Profile Page, Problem Statement, Video Documentary, Test Case, Activity Diagram, Use Case Diagram and User Persona, Contact Us Page </li>

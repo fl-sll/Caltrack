@@ -160,3 +160,17 @@ h2{
 span{
     color: red;
 }
+
+.submit{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    padding: 7px;
+    border-radius: 5px;
+    font-size:16px;
+}
+
+.submit:hover{
+    background-color:rgb(255, 187, 0);
+}

@@ -34,7 +34,7 @@
 
 <li>Wilbert Wirawan Ichwan - Made the My Diets and Diets Page, Use Case Diagram, Use Case Scenario, Problem Statement, Video Documentary, Story Boarding, Contact Us Page</li>
 
-<li>Bryan Angelo - Made the logo and gave out a few ideas, Video Documentary</li>
+<li>Bryan Angelo - Made the logo and gave out a few ideas, Video Documentary, Use Case Diagram, Activity Diagram</li>
 </ul>
 
 
